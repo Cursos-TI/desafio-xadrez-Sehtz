@@ -73,6 +73,31 @@ int main()
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
+        printf("\n     ***XADREZ***\n\n");
+
+    printf("*Movimentação da peça: Cavalo*\n\n");
+
+    printf("Ponto de partida\n");
+
+    // Declaração de variáveis e logica.
+
+    // Movimentação de 2 casas para baixo e 1 casa para Esquerda.
+
+    int x, y = 0;
+
+    for (x = 1; x < 2; x++) // Inicio do For Externo
+    {
+        while (y <= x) // For Interno
+        {
+            printf("%dº Movimento: Baixo.\n", y + 1);
+            y++;
+        } // Fim do For Interno
+
+        printf("%dº Movimento: Esquerda.\n", x + y);
+    } // Fim do For Externo
+
+    printf("Ponto de chegada\n\n");
+
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
